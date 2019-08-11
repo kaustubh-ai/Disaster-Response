@@ -13,7 +13,7 @@ from sklearn.model_selection import GridSearchCV, train_test_split
 from sklearn.metrics import classification_report, fbeta_score, make_scorer
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 import warnings
-# warnings.filterwarnings('ignore')
+warnings.filterwarnings('ignore')
 nlp = spacy.load('en_core_web_sm')
 
 
