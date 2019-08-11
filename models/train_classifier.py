@@ -76,11 +76,6 @@ def build_model():
                          ('tfidf', TfidfTransformer()),
                          ('clf', MultiOutputClassifier(OneVsRestClassifier(LinearSVC())))])
 
-    # pipeline = Pipeline([('vect', CountVectorizer(tokenizer=tokenise)),
-    #                      ('tfidf', TfidfTransformer()),
-    #                      ('clf',
-    #                       MultiOutputClassifier(RandomForestClassifier(n_estimators=50, n_jobs=-1,
-    #                                                                    random_state=69)))])
 
     parameters = {'vect__ngram_range': ((1, 1), (1, 2)),
                   'vect__max_df': (0.75, 1.0)}
