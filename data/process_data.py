@@ -28,7 +28,8 @@ def clean_data(df_cat, df_mess):
     # Create a list of the columns for our labels for multi-label classification
     label_cols = [i[:-2] for i in df_cat['categories'][0].split(';')]
 
-    # Split and expand the categories column into multiple columns. See:
+    # Split and expand the categories column into multiple columns. 
+    # See: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.str.split.html
     df_cat['categories'] = df_cat['categories'].apply(lambda x: ', '.join([i[-1] for i in x.split(';')]))
     df_cat[label_cols] = df_cat['categories'].str.split(',', expand=True)
 
