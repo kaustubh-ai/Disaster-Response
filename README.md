@@ -35,7 +35,8 @@ File `process_data.py` contains data cleaning pipeline that:
 - Stores it in a **SQLite database**
 <br>
 To execute this file, type the following in the terminal:<br>
-`python process_data.py disaster_messages.csv disaster_categories.csv database.db`
+
+```python process_data.py disaster_messages.csv disaster_categories.csv database.db```
 
 <a id='ml_pipeline'></a>
 
