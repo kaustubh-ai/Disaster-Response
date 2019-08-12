@@ -30,10 +30,9 @@ There are three components in this project:
 
 File `process_data.py` contains data cleaning pipeline that:
 
-- Loads the `messages` and `categories` dataset
-- Merges the two datasets
-- Cleans the data
-- Stores it in a **SQLite database**
+- Loads the files `disaster_messages.csv` and `disaster_categories.csv`
+- Merges the two datasets after cleaning them
+- Stores it in a SQLite database
 <br>
 To execute this file, type the following in the terminal:<br>
 ```python process_data.py disaster_messages.csv disaster_categories.csv database.db```
@@ -44,11 +43,9 @@ To execute this file, type the following in the terminal:<br>
 
 File _models/train_classifier.py_ contains machine learning pipeline that:
 
-- Loads data from the **SQLite database**
-- Splits the data into training and testing sets
+- Loads data from the SQLite database
 - Builds a text processing and machine learning pipeline
 - Trains and tunes the model
-- Outputs result on the test set
 - Exports the final model as a pickle file
 <br>
 To execute this file, type the following in the terminal:<br>
