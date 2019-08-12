@@ -7,6 +7,7 @@
   - [ETL Pipeline](#etl_pipeline)
   - [ML Pipeline](#ml_pipeline)
   - [Flask Web App](#flask)
+- [Screenshots](#screenshots) 
 - [Contribute](#contribute)
 
 ***
@@ -34,9 +35,8 @@ File `process_data.py` contains data cleaning pipeline that:
 - Cleans the data
 - Stores it in a **SQLite database**
 <br>
-To execute this file, type the following in the terminal:<br>
-
-```python process_data.py disaster_messages.csv disaster_categories.csv database.db```
+To execute this file, type the following in the terminal:
+`python process_data.py disaster_messages.csv disaster_categories.csv database.db`
 
 <a id='ml_pipeline'></a>
 
@@ -51,21 +51,28 @@ File _models/train_classifier.py_ contains machine learning pipeline that:
 - Outputs result on the test set
 - Exports the final model as a pickle file
 <br>
-To execute this file, type the following in the terminal:<br>
-
-```python train_classifier.py ../data/database.db model_svc.pkl```
-
-<a id='flask'></a>
+To execute this file, type the following in the terminal:
+`python train_classifier.py ../data/database.db model_svc.pkl`
 
 ### 2.3. Flask Web App
 
-<a id='eg'></a>
-
-The micro web framework Flask is used to provide connectivity between the web page and the Python code<br>
-To run the web app, type the following in the terminal:<br>
+The micro web framework Flask is used to provide connectivity between the web page and the Python code
+To run the web app, type the following in the terminal:
 `python run.py`
 
 ***
+
+<a name="screenshots"/>
+
+## Screenshots
+
+![train_classifier_2.jpg](screenshots/classified.png)
+![train_classifier_2.jpg](screenshots/genre.png)
+![train_classifier_2.jpg](screenshots/msg_cat.png)
+![train_classifier_2.jpg](screenshots/word_freq.png)
+
+***
+
 
 <a name="contribute"/>
 
