@@ -35,6 +35,7 @@ File `process_data.py` contains data cleaning pipeline that:
 - Stores it in a SQLite database
 <br>
 To execute this file, type the following in the terminal:<br>
+
 ```python process_data.py disaster_messages.csv disaster_categories.csv database.db```
 
 <a id='ml_pipeline'></a>
@@ -49,12 +50,14 @@ File _models/train_classifier.py_ contains machine learning pipeline that:
 - Exports the final model as a pickle file
 <br>
 To execute this file, type the following in the terminal:<br>
+
 ```python train_classifier.py ../data/database.db model_svc.pkl```
 
 ### 2.3. Flask Web App
 
 The micro web framework Flask is used to provide connectivity between the web page and the Python code
-To run the web app, type the following in the terminal:
+To run the web app, type the following in the terminal:<br>
+
 `python run.py`
 
 ***
