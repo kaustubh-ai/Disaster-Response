@@ -56,7 +56,7 @@ def index():
     cat_p = cat_p.sort_values(ascending=False)  # largest bar will be on left
     cats = list(cat_p.index)  # category names
 
-    words_with_repetition = []  # will contain all words words with repetition
+    words_with_repetition = []  # Contains all words words with repetition
     for text in df['message'].values:
         tokenized_ = tokenise(text)
         words_with_repetition.extend(tokenized_)
