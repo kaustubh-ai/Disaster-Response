@@ -35,8 +35,8 @@ File `process_data.py` contains data cleaning pipeline that:
 - Cleans the data
 - Stores it in a **SQLite database**
 <br>
-To execute this file, type the following in the terminal:
-`python process_data.py disaster_messages.csv disaster_categories.csv database.db`
+To execute this file, type the following in the terminal:<br>
+```python process_data.py disaster_messages.csv disaster_categories.csv database.db```
 
 <a id='ml_pipeline'></a>
 
@@ -51,8 +51,8 @@ File _models/train_classifier.py_ contains machine learning pipeline that:
 - Outputs result on the test set
 - Exports the final model as a pickle file
 <br>
-To execute this file, type the following in the terminal:
-`python train_classifier.py ../data/database.db model_svc.pkl`
+To execute this file, type the following in the terminal:<br>
+```python train_classifier.py ../data/database.db model_svc.pkl```
 
 ### 2.3. Flask Web App
 
