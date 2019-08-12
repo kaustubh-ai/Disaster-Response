@@ -52,7 +52,8 @@ File _models/train_classifier.py_ contains machine learning pipeline that:
 - Exports the final model as a pickle file
 <br>
 To execute this file, type the following in the terminal:<br>
-`python train_classifier.py ../data/database.db model_svc.pkl`
+
+```python train_classifier.py ../data/database.db model_svc.pkl```
 
 <a id='flask'></a>
 
